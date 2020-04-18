@@ -9,13 +9,13 @@ const InfoBar = ({room}) => {
         <div className="infoBar">
             <div className = "leftInnerContainer">
                 <Tooltip title={<span>Online</span>}>
-                    <CheckCircleOutlined style={{marginRight:'5%'}} />
+                    <CheckCircleOutlined style={{marginRight:'5%',fontSize:'16px'}} />
                 </Tooltip>
                 <h2 style={{color:'white',marginTop:'3%'}}>{room}</h2>
             </div>
             <div className = "rightInnerContainer">
                 <Tooltip title={<span>Exit Room</span>}>
-                    <a href="/"><CloseCircleOutlined style={{color:'red'}}/></a>
+                    <a href="/"><CloseCircleOutlined style={{color:'red',fontSize:'16px'}}/></a>
                 </Tooltip>
             </div>
         </div>
