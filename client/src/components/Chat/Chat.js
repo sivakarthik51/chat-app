@@ -3,6 +3,7 @@ import queryString from 'query-string';
 import io from 'socket.io-client';
 import {Input} from 'antd';
 import InfoBar from '../InfoBar/InfoBar';
+import InputComponent from '../InputComponent/InputComponent';
 
 import './Chat.css';
 
@@ -48,8 +49,9 @@ const Chat = ({ location }) => {
     return (
         <div className="outerContainer">
             <div className="container">
-                {/* <Input value={message} placeholder="Enter Message" onChange={(event) => setMessage(event.target.value)} onPressEnter={(event) => sendMessage(event)}/> */}
+                
                 <InfoBar room = {room}/>
+                <InputComponent message={message} setMessage={setMessage} sendMessage={sendMessage} />
             </div>
 
         </div>
