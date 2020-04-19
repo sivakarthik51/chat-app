@@ -2,7 +2,7 @@ import React from 'react';
 import {  SendOutlined } from '@ant-design/icons';
 
 import './InputComponent.css'
-import { Tooltip,Input, Button } from 'antd';
+import { Input, Button } from 'antd';
 
 const InputComponent = ({message,setMessage,sendMessage}) => {
     return (
